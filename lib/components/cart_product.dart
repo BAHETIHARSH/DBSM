@@ -11,35 +11,17 @@ class Cart_products extends StatefulWidget {
 class _Cart_productsState extends State<Cart_products> {
   var Products_on_the_cart = [
     {
-      'name': "Blazer",
-      'picture': "images/products/blazer1.jpeg",
-      'price': 1000,
-      'size' : "XL",
-      'color': "Red",
+      'name': "Basmati Rice",
+      'picture': "images/products/white-regular-choice-na-basmati-rice-pouch-india-gate-original-imag56ne3sya9ea4 - Yash Bhople.jpeg",
+      'price': 64,
+      'size' : "2 KG",
       'quantity' : 1,
     },
     {
-      'name': "Dress",
-      'picture': "images/products/dress1.jpeg",
-      'price': 800,
-      'size' : "M",
-      'color': "Red",
-      'quantity' : 1,
-    },
-    {
-      'name': "hills",
-      'picture': "images/products/hills1.jpeg",
-      'price': 800,
-      'size' : "8",
-      'color': "Red",
-      'quantity' : 1,
-    },
-    {
-      'name': "Shoe",
-      'picture': "images/products/shoe1.jpg",
-      'price': 1000,
-      'size' : "10",
-      'color': "Red",
+      'name': " Soyabean Oil",
+      'picture': "images/products/refined-pouch-soyabean-oil-fortune-original-imag4gb3gy7ykafy - Yash Bhople.jpeg",
+      'price': 170,
+      'size' : "1 KG",
       'quantity' : 1,
     },
   ];
@@ -53,7 +35,6 @@ class _Cart_productsState extends State<Cart_products> {
             cart_prod_picture: Products_on_the_cart[index]['picture'],
             cart_prod_price: Products_on_the_cart[index]['price'],
             cart_prod_size: Products_on_the_cart[index]['size'],
-            cart_prod_color: Products_on_the_cart[index]['color'],
             cart_prod_qty: Products_on_the_cart[index]['quantity'],
           );
         })
@@ -65,14 +46,12 @@ class Single_cart_product extends StatelessWidget {
   final cart_prod_picture;
   final cart_prod_price;
   final cart_prod_size;
-  final cart_prod_color;
   final cart_prod_qty;
   Single_cart_product({
     this.cart_prod_name,
     this.cart_prod_picture,
     this.cart_prod_price,
     this.cart_prod_size,
-    this.cart_prod_color,
     this.cart_prod_qty,
   });
 
@@ -95,19 +74,13 @@ class Single_cart_product extends StatelessWidget {
                   padding: const EdgeInsets.all(4.0),
                   child: Text(cart_prod_size),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 8, 8, 8),
-                    child: new Text("Color :"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(4.0),
-                    child: new Text(cart_prod_color),
-                ),
+
+
               ],
             ),
             new Container(
               alignment: Alignment.topLeft,
-              child: new Text("\$${cart_prod_price}",
+              child: new Text("\u{20B9}${cart_prod_price}",
               style: TextStyle(
                 fontSize: 17,
                 fontWeight: FontWeight.bold,

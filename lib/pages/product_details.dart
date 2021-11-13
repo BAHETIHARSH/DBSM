@@ -115,32 +115,32 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
               //__________________Color button____________________________________
 
-              Expanded(
-                child: MaterialButton(
-                  onPressed: () {
-                    showDialog(context:context,
-                        builder:(context){
-                          return new AlertDialog(
-                            title: new Text("Color"),
-                            content: new Text("Choose the Color"),
-                            actions: <Widget>[
-                              new MaterialButton(onPressed: (){
-                                Navigator.of(context).pop(context);
-                              },
-                                  child:new Text('Close'))
-                            ],
-                          );
-                        });},
-                  color: Colors.white,
-                  textColor: Colors.grey,
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(child: new Text("Color")),
-                      Expanded(child: new Icon(Icons.arrow_drop_down)),
-                    ],
-                  ),
-                ),
-              ),
+              // Expanded(
+              //   child: MaterialButton(
+              //     onPressed: () {
+              //       showDialog(context:context,
+              //           builder:(context){
+              //             return new AlertDialog(
+              //               title: new Text("Color"),
+              //               content: new Text("Choose the Color"),
+              //               actions: <Widget>[
+              //                 new MaterialButton(onPressed: (){
+              //                   Navigator.of(context).pop(context);
+              //                 },
+              //                     child:new Text('Close'))
+              //               ],
+              //             );
+              //           });},
+              //     color: Colors.white,
+              //     textColor: Colors.grey,
+              //     child: Row(
+              //       children: <Widget>[
+              //         Expanded(child: new Text("Color")),
+              //         Expanded(child: new Icon(Icons.arrow_drop_down)),
+              //       ],
+              //     ),
+              //   ),
+              // ),
               //__________________Quantity button____________________________________
 
               Expanded(
@@ -196,7 +196,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           //________________-Details-______________________
           new ListTile(
             title: new Text("Product Details"),
-            subtitle: new Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."),
+            subtitle: new Text("India Gate Classic Basmati Rice is an exotic new class of Basmati which is aged for 2 years. ... Apart from the delicious taste, it is defined by its delicate aroma and smooth pearl white grains that are extra fine and long - all attributes of a true Basmati."),
           ),
           Divider(),
           Row(
@@ -215,16 +215,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: new Text("Product brand",style: TextStyle(color: Colors.grey),),
               ),
               Padding(padding: const EdgeInsets.all(5),
-                child: new Text("BrandX"),)
+                child: new Text("India Gate"),)
             ],
           ),
           Row(
             children: <Widget>[
               Padding(padding: const EdgeInsets.fromLTRB(12, 5, 5, 5),
-                child: new Text("Product condition",style: TextStyle(color: Colors.grey),),
+                child: new Text("Shelf Life",style: TextStyle(color: Colors.grey),),
               ),
               Padding(padding: const EdgeInsets.all(5),
-                child: new Text("New"),)
+                child: new Text("24 months"),)
             ],
           ),
           Divider(),
@@ -253,28 +253,28 @@ class Similar_products extends StatefulWidget {
 class _Similar_productsState extends State<Similar_products> {
   var product_list = [
     {
-      'name': "Blazer",
-      'picture': "images/products/blazer1.jpeg",
-      'old_price': 1200,
-      'price': 1000,
+      'name': "Basmati Rice",
+      'picture': "images/products/white-regular-choice-na-basmati-rice-pouch-india-gate-original-imag56ne3sya9ea4 - Yash Bhople.jpeg",
+      'old_price': 83,
+      'price': 64,
     },
     {
-      'name': "Dress",
-      'picture': "images/products/dress1.jpeg",
-      'old_price': 1000,
-      'price': 800,
+      'name': " Soyabean Oil",
+      'picture': "images/products/refined-pouch-soyabean-oil-fortune-original-imag4gb3gy7ykafy - Yash Bhople.jpeg",
+      'old_price': 180,
+      'price': 170,
     },
     {
-      'name': "hills",
-      'picture': "images/products/hills1.jpeg",
-      'old_price': 1000,
-      'price': 800,
+      'name': "BANSHI  WHEAT",
+      'picture': "images/products/banshi-premium-wheat-500x500 - Yash Bhople.jpg",
+      'old_price': 60,
+      'price': 55,
     },
     {
-      'name': "Shoe",
-      'picture': "images/products/shoe1.jpg",
-      'old_price': 1200,
-      'price': 1000,
+      'name': "Fortune  Besan",
+      'picture': "images/products/516orkbeQPL - Yash Bhople.jpg",
+      'old_price': 120,
+      'price': 100,
     },
   ];
   @override

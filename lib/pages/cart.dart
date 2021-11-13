@@ -37,7 +37,7 @@ class _CartState extends State<Cart> {
           children: <Widget>[
             Expanded(child: ListTile(
               title: new Text("Totals :"),
-              subtitle: new Text("\$230"),
+              subtitle: new Text("\u{20B9}234"),
             )
             ),
             Expanded(

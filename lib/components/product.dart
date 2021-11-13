@@ -11,28 +11,28 @@ class Product extends StatefulWidget {
 class _ProductState extends State<Product> {
   var product_list = [
     {
-      'name': "Blazer",
-      'picture': "images/products/blazer1.jpeg",
-      'old_price': 1200,
-      'price': 1000,
+      'name': "Basmati Rice",
+      'picture': "images/products/white-regular-choice-na-basmati-rice-pouch-india-gate-original-imag56ne3sya9ea4 - Yash Bhople.jpeg",
+      'old_price': 83,
+      'price': 64,
     },
     {
-      'name': "Dress",
-      'picture': "images/products/dress1.jpeg",
-      'old_price': 1000,
-      'price': 800,
+      'name': " Soyabean Oil",
+      'picture': "images/products/refined-pouch-soyabean-oil-fortune-original-imag4gb3gy7ykafy - Yash Bhople.jpeg",
+      'old_price': 180,
+      'price': 170,
     },
     {
-      'name': "hills",
-      'picture': "images/products/hills1.jpeg",
-      'old_price': 1000,
-      'price': 800,
+      'name': "BANSHI  WHEAT",
+      'picture': "images/products/banshi-premium-wheat-500x500 - Yash Bhople.jpg",
+      'old_price': 60,
+      'price': 55,
     },
     {
-      'name': "Shoe",
-      'picture': "images/products/shoe1.jpg",
-      'old_price': 1200,
-      'price': 1000,
+      'name': "Fortune  Besan",
+      'picture': "images/products/516orkbeQPL - Yash Bhople.jpg",
+      'old_price': 120,
+      'price': 100,
     },
   ];
   @override

@@ -25,10 +25,9 @@ class _HomepageState extends State<Homepage> {
       child: Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('images/c1.jpg'),
-          AssetImage('images/m1.jpeg'),
-          AssetImage('images/m2.jpg'),
-          AssetImage('images/w3.jpeg'),
+          AssetImage('images/banner1.jpg'),
+          AssetImage('images/banner2.jpg'),
+          AssetImage('images/banner3.jpg'),
         ],
         dotSize: 4,
         indicatorBgPadding: 2,
